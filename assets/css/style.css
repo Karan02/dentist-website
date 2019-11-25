@@ -1,0 +1,819 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+.container::after,
+.container::before,
+.container-fluid:after,
+.container-fluid:before {
+  display: table;
+  content: " ";
+}
+::after,
+::before,
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section,
+div {
+  display: block;
+}
+.container:after,
+.container-fluid:after {
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/*Reset CSS end*/
+
+/*Header section*/
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  width: 1141px;
+}
+.header-logo {
+  max-width: 245px;
+  max-height: 36px;
+  margin: auto;
+}
+
+.logo-main {
+  width: 100%;
+}
+
+.header {
+  padding-top: 45px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-item {
+  padding-right: 38px;
+  transition: 0.4s ease-in-out;
+}
+a.nav-item:hover {
+  color: #ddd !important;
+}
+.phone-number {
+  display: flex;
+}
+.telephone-number {
+  padding-left: 13px;
+}
+
+.banner-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/doctor.png");
+  height: 100vh;
+  width: 100%;
+}
+.banner-content {
+  top: 225px;
+  left: 186px;
+}
+.header {
+  z-index: 11;
+}
+.banner-image-2 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/teeth.png");
+  height: 100vh;
+  width: 100%;
+}
+.nav-item {
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.69;
+  color: #ffffff !important;
+}
+
+.telephone-number {
+  font-family: Catamaran;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.86;
+  text-align: center;
+  color: #2d324b;
+}
+.phone-number {
+  padding: 11.5 22;
+}
+.nav-list {
+  display: contents !important;
+}
+.phone-number {
+  border-radius: 4px;
+  background-color: #ebecf0;
+  transition: 0.4s ease-in-out;
+}
+.phone-number:hover {
+  background-color: #ddd;
+}
+
+.welcome-text {
+  font-family: Catamaran;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.3;
+  text-align: left;
+  color: #02015d;
+}
+.welcome-line {
+  position: relative;
+}
+.welcome-content::after {
+  top: 45%;
+
+  content: "";
+  height: 3px;
+  width: 5%;
+  background-color: #02015d;
+
+  left: 96px;
+  bottom: auto;
+}
+.welcome-name {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: #ffffff;
+
+  text-align: left;
+}
+.welcome-details {
+  padding-top: 37px;
+  font-family: Lato;
+  font-size: 22px;
+  line-height: 1.86;
+  text-align: left;
+  color: #ffffff;
+}
+.welcome-number {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.88;
+  text-align: center;
+  color: #fff;
+}
+.telephone-number-with-logo {
+  margin-top: 56px;
+  display: flex;
+}
+.welcome-telephone-image {
+  width: 20.5px;
+  height: 20.5px;
+}
+.banner-telephone-number {
+  padding: 6px;
+}
+
+/* philosophy section */
+.philosophy-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.grid-image {
+  position: absolute;
+  top: -107.7px;
+}
+
+.grid-quote {
+  padding-top: 208.6px;
+}
+
+.philosophy-grid {
+  position: relative;
+}
+.philosophy-title {
+  padding-top: 146.6px;
+  font-family: Catamaran;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 1.29;
+  letter-spacing: -1.61px;
+  text-align: left;
+  color: #000645;
+}
+.philosophy-text {
+  font-family: Catamaran;
+  font-size: 20px;
+  line-height: 1.55;
+  text-align: left;
+  color: #464861;
+}
+.first-para {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.second-para {
+  padding-bottom: 40px;
+}
+.blue-tooth {
+  width: 180px;
+  height: 180px;
+  float: right;
+  margin-bottom: -64px;
+}
+.tooth {
+  width: 100%;
+}
+button.slick-next.slick-arrow {
+  display: none !important;
+}
+/* .triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 500px solid #555;
+  border-bottom: 0px solid transparent;
+} */
+
+/*service section*/
+
+.our-services {
+  background-color: #ddd;
+  display: inline-block;
+  margin-top: 42px;
+  width: 100%;
+
+  transform: skew(0, 4deg);
+  overflow: hidden;
+}
+.our-services .container {
+  transform: skew(0, -4deg);
+}
+.service-column {
+  max-height: 60px;
+  max-width: 60px;
+}
+.service-logos {
+  padding: 15.5px;
+}
+
+#more1,
+#more2,
+#more3,
+#more4,
+#more5,
+#more6,
+#more7,
+#more8,
+#more9,
+#more10,
+#more11,
+#more12 {
+  display: none;
+}
+
+#myBtn1,
+#myBtn2,
+#myBtn3,
+#myBtn4,
+#myBtn5,
+#myBtn6,
+#myBtn7,
+#myBtn8,
+#myBtn9,
+#myBtn10,
+#myBtn11,
+#myBtn12 {
+  background-color: rgba(0, 255, 255, 0);
+  border: none;
+}
+.service-logos {
+  max-height: 60px;
+  max-width: 60px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 6px 8px 11px 0 rgba(202, 199, 255, 0.16);
+  background-color: #ffffff;
+}
+.services-title {
+  padding-top: 28px;
+  padding-bottom: 21px;
+  font-family: Catamaran;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: -0.78px;
+  text-align: left;
+  color: #0e0b51;
+}
+.services-description {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #44465f;
+}
+.service-title {
+  font-family: Catamaran;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1.3;
+  letter-spacing: -1.4px;
+  text-align: left;
+  color: #000645;
+  margin-bottom: 56px;
+}
+
+h2.services-title {
+  position: relative;
+}
+
+h2.service-title::before {
+  content: "";
+  width: 3%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  top: -21px;
+}
+.our-services {
+  position: relative;
+  padding-top: 193.5px;
+}
+.row {
+  padding-bottom: 70px;
+}
+
+.row-last {
+  padding-bottom: 230px;
+}
+/*florian section*/
+
+.florian-portrait {
+  width: 100%;
+  margin-top: -35px;
+}
+.dr-florian-image {
+  width: 443px;
+  height: 607px;
+}
+.dr-florian-title {
+  font-family: Catamaran;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 1.29;
+  letter-spacing: -1.61px;
+  text-align: left;
+  color: #000645;
+  margin-top: 145px;
+  padding-bottom: 30px;
+}
+.dr-florian-description {
+  font-family: Catamaran;
+  font-size: 20px;
+  line-height: 1.55;
+  text-align: left;
+  color: #464861;
+  padding-bottom: 60px;
+}
+.florian-details {
+  position: relative;
+}
+.wisdom-teeths {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  width: 256px;
+  height: 158px;
+}
+.teeths {
+  width: 100%;
+}
+
+/*florian section end*/
+
+/*our section*/
+
+.our-team-title {
+  font-family: Catamaran;
+  font-size: 62px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -1.61px;
+  text-align: center;
+  color: #000645;
+  margin-top: 48px;
+  padding-bottom: 15px;
+}
+
+.our-team-description {
+  font-family: Catamaran;
+  font-size: 20px;
+  line-height: 1.55;
+  text-align: center;
+  color: #464861;
+}
+.our-team-image {
+  padding-top: 48px;
+  width: 1181px;
+  height: 327px;
+}
+
+.description-paragraph {
+  padding-top: 17px;
+}
+.our-team-end {
+  margin-top: 2.962rem;
+}
+.team-image {
+  width: 100%;
+}
+/*book apointment section*/
+
+.book-appointment {
+  margin-top: 190px;
+  position: relative;
+}
+.booking-details {
+  background-color: #2c2f40;
+}
+.book-header {
+  font-family: Catamaran;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 1.29;
+  letter-spacing: -1.61px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 146px;
+}
+.booking-details {
+  font-family: Catamaran;
+  font-size: 18px;
+  line-height: 1.72;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.booking-info {
+  margin: 0 auto;
+}
+
+.book-through-telephone {
+  background-color: #fff;
+  width: max-content;
+  margin: auto;
+  padding: 23.5 55;
+  margin-bottom: 145.4px;
+  transition: 0.4s ease-in-out;
+}
+.book-through-telephone:hover {
+  background-color: #ddd;
+}
+.book-phone-number {
+  color: #000;
+  display: flex;
+}
+.book-phone {
+  padding-left: 12px;
+}
+.booking-details {
+  width: 90%;
+  transform: skew(0deg, 2deg);
+  left: -2%;
+}
+.booking-details .container {
+  transform: skew(0deg, -2deg);
+}
+.book-header {
+  padding-bottom: 24px;
+}
+.booking-details-info {
+  padding-bottom: 27px;
+}
+.grid-1 {
+  position: absolute;
+  z-index: 12;
+  top: -106px;
+  left: 138px;
+}
+.semi-circle {
+  position: absolute;
+  z-index: 12;
+  right: 136.6px;
+  top: -51px;
+}
+.grid-2 {
+  z-index: 12;
+  position: absolute;
+  right: 162px;
+  bottom: -111px;
+}
+
+/*contact us section*/
+.contact-us {
+  position: relative;
+}
+.contact-us-info {
+  padding-bottom: 162px;
+}
+.contact-us-title-text {
+  font-family: Catamaran;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 1.29;
+  letter-spacing: -1.61px;
+  text-align: center;
+  color: #000645;
+  padding-top: 104.6px;
+  padding-bottom: 76.2px;
+}
+li.unordered-list1,
+li.unordered-list2,
+li.unordered-list3 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  position: relative;
+  padding-left: 95px;
+  border-bottom: 2px solid rgba(240, 237, 237, 0.548);
+}
+li.unordered-list1::before,
+li.unordered-list2::before,
+li.unordered-list3::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url("../images/Group\ 5921.png");
+  top: 13px;
+  left: 0px;
+}
+
+li.unordered-list2::before {
+  background-image: url("../images/Group\ 5922.png");
+}
+li.unordered-list3::before {
+  background-image: url("../images/Group\ 5923.png");
+}
+
+.contact-list-1 {
+  font-family: Catamaran;
+  font-size: 21px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000645;
+}
+.mistelbacher-stasse {
+  width: 60%;
+}
+
+.contact-list-2 {
+  background-color: #f9f9f9;
+  padding: 72 135 78 134;
+}
+
+/* .contact-list-2::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  right: 0px;
+  bottom: -40px;
+  border-style: solid;
+  border-color: #f9f9f9 #f9f9f9 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-width: 4.5vh 22vw;
+} */
+.opening-hour-text {
+  font-family: Catamaran;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000645;
+  padding-left: 44.2px;
+}
+.opening-hours {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 48px;
+}
+.timings-unordered-list {
+  position: relative;
+}
+.timings {
+  position: relative;
+  padding: 23px;
+  font-family: Catamaran;
+  font-size: 16px;
+  line-height: 0.19;
+  text-align: left;
+  color: #000645;
+}
+li.timings::before {
+  content: "";
+  width: 13px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  top: 22px;
+  left: -14px;
+  background-color: rgb(243, 94, 94);
+}
+
+/*map section*/
+.Map {
+  width: 100%;
+  height: 443.6px;
+}
+#map {
+  width: 100%;
+  height: 443.6px;
+}
+
+/*footer section*/
+.footer-logo {
+  width: 271px;
+  height: 40px;
+  margin-top: 74.5px;
+  padding-bottom: 39px;
+}
+.footer-logo-image {
+  width: 100%;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-list-item {
+  padding-right: 42px;
+  font-family: Catamaran;
+  font-size: 16px;
+  line-height: 1.69;
+  text-align: left;
+  color: #464861;
+  transition: 0.4s ease-in-out;
+}
+
+.footer-list-item:hover {
+  color: #000;
+}
+
+.footer-privacy {
+  text-align: end;
+  font-family: Catamaran;
+  font-size: 16px;
+  line-height: 1.69;
+
+  color: #464861;
+}
+
+.footer-nav {
+  padding-bottom: 44.5px;
+}
+
+.developers-text {
+  font-family: Catamaran;
+  font-size: 18px;
+  line-height: 2.28;
+  text-align: left;
+  color: #464861;
+  padding-left: 17.5px;
+}
+.heart-image {
+  height: 18.5px;
+  width: 18.5px;
+  margin: auto 0;
+}
+
+.heart {
+  width: 100%;
+}
+.rights {
+  text-align: right;
+  font-family: Catamaran;
+  font-size: 16px;
+  line-height: 2.56;
+  color: #464861;
+  padding-right: 0px;
+}
+.footer-philosophy-nav {
+  padding-left: 0px;
+}
